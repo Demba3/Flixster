@@ -11,11 +11,13 @@ public class Movie {
     String possterPath;
     String title;
     String overView;
+    String backgroundPath;
 
     public Movie(JSONObject jsonObject) throws JSONException {
         possterPath = jsonObject.getString("poster_path");
         title = jsonObject.getString("title");
         overView = jsonObject.getString("overview");
+        backgroundPath = jsonObject.getString("backdrop_path");
     }
 
     public static List<Movie> fromJsonArray(JSONArray jsonArray) throws JSONException {
@@ -28,6 +30,10 @@ public class Movie {
 
     public String getPossterPath() {
         return String.format("https://image.tmdb.org/t/p/w342/%s", possterPath);
+    }
+
+    public String getBackgroundPath() {
+        return String.format("https://image.tmdb.org/t/p/w342/%s", backgroundPath);
     }
 
     public String getTitle() {
