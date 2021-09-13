@@ -29,7 +29,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 ### Notes
 
 Describe any challenges encountered while building the app.
-The main problem I encountered was getting the app to implement the YouTube player. The phone I was using on the emulator did not have Google Play Services preinstalled. 
+-The main problem I encountered was getting the app to implement the YouTube player. The phone I was using on the emulator did not have Google Play Services preinstalled. 
 
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
